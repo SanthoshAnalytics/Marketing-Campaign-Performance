@@ -174,6 +174,14 @@ The project contains 15 SQL queries including:
 - Campaign distribution is balanced among campaign types.
 
 ---
+---
+
+## 📥 Why Python Was Used for MySQL Import
+
+The marketing campaign dataset contains approximately **200,000 records**, making it inefficient to import using manual SQL `INSERT` statements. Initially, `LOAD DATA LOCAL INFILE` was attempted in MySQL Workbench, but it failed due to local file access restrictions.
+
+To overcome this issue, a Python script (`import_to_mysql.py`) was developed using **Pandas**, **SQLAlchemy**, and **PyMySQL**. The script reads the cleaned CSV file and efficiently uploads the entire dataset into the MySQL database using `df.to_sql()`. This approach is faster, more reliable, and better suited for handling large datasets.
+
 
 # ▶️ How to Run
 
