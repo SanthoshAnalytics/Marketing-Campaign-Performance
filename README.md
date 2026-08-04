@@ -251,7 +251,7 @@ Refresh the data source if required.
 
 # 👨‍💻 Author
 
-**Santhosh Veerasingam**
+**Santhosh V**
 
 AI & Data Science Student
 
